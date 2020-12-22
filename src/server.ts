@@ -13,7 +13,6 @@ const server = new ApolloServer({
   validationRules: [depthLimit(7)],
 });
 
-app.use(helmet());
 app.use('*', cors());
 app.use(compression());
 

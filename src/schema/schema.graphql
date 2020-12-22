@@ -1,3 +1,13 @@
+type User {
+  firstName: String!
+  lastName: String!
+  email: String!
+  password: String!
+}
+
 type Query {
   helloWorld: String!
+  login( email: String, password: String ): User
+  signup: User
+  users: [User]!
 }
