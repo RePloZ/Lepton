@@ -5,7 +5,7 @@ import { createServer } from 'http';
 import compression from 'compression';
 import cors from 'cors';
 import schema from './schema';
-import helmet from 'helmet';
+// import helmet from 'helmet';
 
 const app = express();
 const server = new ApolloServer({
